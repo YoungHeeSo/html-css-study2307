@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 인라인: 가로세로 크기 설정 안됨, 줄바꿈이 안됨 display으로 block 하면 바꿈 
+        인라인안에는 블럭요소를 넣을 수 없다*
+        인라인 안에 다른 인라인을 넣을 수는 있다
+        블록 안에는 블록을 넣기, 인라인을 넣을 수 있다*/
+
+        span{
+            background: lightcoral; width: 300px; height: 300px;
+        }
+        em{
+            background: orange; display: inline; width: 200px; height: 200px;
+        }
+        a{
+            background: dodgerblue;
+        }
+    </style>
+    
+</head>
+<body>
+    <span>인라인1</span>
+    <em>인라인2</em>
+    <a href="#">인라인3</a>
+
+    
+</body>
+</html>
