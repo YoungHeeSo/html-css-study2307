@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>   
+
+    <form action="https://www.github.com">
+
+        * 이름 : <input type="text" value="홍길동" readonly> <br>
+        value> 초기값 
+        redonly> 데이터는 넘어가고, 수정안됨
+        disabled> 데이터가 서버로 안넘어감
+
+        * 패스워드: <input type="password"> <br>
+        type="password"> 마킹기능지원
+
+        * 이메일: <input type="email" placeholder="aaa@bbb.com"> <br>
+        > placeholder> 입력힌트 
+
+        * 취미:
+        <input type="checkbox"> 게임
+        type="checkbox"> 다중선택
+
+        <input type="checkbox" checked> 축구
+        checked> 기본값으로 체크가 되어있음
+
+        <input type="checkbox" disabled> 낮잠  <br>        
+        disabled> 체크x
+
+        # 메일 수신 여부:
+        <input type="radio" name="mail" checked> 예
+        <input type="radio" name="mail"> 아니오 <br>
+        radio> 그룹에서 하나만 선택
+        같은 이름을 주어야 그룹으로 인지해서 선택했을때 하나만 선택될 수 있음
+
+        # 주문 수량:
+        <input type="number" max="10" value="1">
+        숫자만 사용가능, 최대최소값 설정가능, 초기값
+        <input type="range" min="0" max="5" value="3"> <br>
+        범위설정, 0에서 5까지 5단계로 나누어서 설정가능, 처음위치
+
+        # 파일:
+        <input type="file" multiple accept="image/*"> <br>
+        multiple> 여러 파일 선택가능
+        accept=image/*> 이미지만 선택가능, 다른 형식의 파일은 선택은x
+
+        <!— 사용자 몰래 서버로 보내야 하는 데이터 —>
+        <input type="hidden" name="nickname" value="바보">
+        hidden> 화면에 나오지는 않지만 서버로는 보내는 
+
+        <br>
+        <button type="button">그냥 버튼</button>
+        button> 원하는대로 커스텀가능
+        <button type="reset">입력값 초기화버튼</button>
+        <button type="submit">서버전송버튼</button>
+
+        <input type="button" value="input버튼">
+        *button태그 사용추천
+        닫는태그가 없어, 이미지를 넣거나 하는게 불가능하다
+    </form>
+
+</body>
+</html>
