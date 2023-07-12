@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #fruits li{
+            list-style: none;
+        }
+        #fruits.blberr{
+            color: red;
+        }
+        /* #fruits li:first-child{
+            color: red;
+        } */
+        #fruits li:last-child{
+            color: greenyellow;
+        }
+        #fruits li:nth-child(3){
+            color: orange;
+        }
+        #fruits li:nth-child(2n){
+            background: aqua;
+        }
+        /* 짝수 */
+        #fruits li:nth-child(even){ 
+            background: aqua;
+        }
+        /* 홀수 */
+        #fruits li:nth-child(odd){ 
+            background: tomato;
+        }
+        #fruits li:not(.blberr){ 
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <ul id="fruits">
+        <li>사과</li>
+        <li>석류</li>
+        <li class="blberr">블베</li>
+        <li>포도</li>
+        <li>샤머</li>
+        <li class="bana">바나</li>
+        <li>망고</li>
+    </ul>
+</body>
+</html>
