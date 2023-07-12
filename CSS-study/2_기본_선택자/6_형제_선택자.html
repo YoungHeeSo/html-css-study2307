@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 인접 형제 선택자 */
+        .orange + li{
+            color: orangered;
+        }
+        /* 형이 class=orange이면 색 적용 */
+        li+li{
+            font-style: italic;
+            font-weight: 700;
+            list-style: none;
+        }
+        .red ~ li{
+            background: tomato;            
+        }
+        /* 형들중에 class.red가 있으면 색 적용 */
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="orange">어린쥐</li> 1
+        <li>사과</li> 2
+        <li>뚜왈기</li> 3
+        <li class="red">자몽</li> 3
+        <li class="orange">오렌지</li> 4
+        <li>레몬</li> 5
+        <li>포도</li> 6
+    </ul>
+</body>
+</html>
