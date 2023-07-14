@@ -1,4 +1,3 @@
-# html-css-study230711
 # 처음에 설치할 플러그인들
 1. Korean Language Pack - 한글화 프로그램입니다.
 2. Material Theme - 테마 설정을 다양화해줍니다.
