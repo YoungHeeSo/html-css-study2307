@@ -11,7 +11,7 @@ body{
 
 /* header style */
 header{
-    background: orange;
+    /* background: orange; */
     padding: 20px 0;
     position: fixed;
     top: 0; z-index: 999;
@@ -19,7 +19,7 @@ header{
 }
 
 header .inner-header{
-    background: tomato;
+    /* background: tomato; */
     width: 92%;
     margin: 0 auto;
 
@@ -46,7 +46,7 @@ header .inner-header .menu-open{
     flex: 1;
 
     font-weight: 700; font-size: 1.2em;
-    background: violet;
+    /* background: violet; */
     align-self: stretch;
 
     display: flex;
@@ -60,5 +60,39 @@ header .inner-header .menu-open .lur-menu{
 }
 
 header .gnb{
-    display: none;
+    /* 화면 높이를 가득 채울때 */
+    height: 100vh;
+
+    background: #000; color: #666;
+    font-weight: 700; font-size: 40px;
+    padding: 70px 100px;
+
+    position: fixed;
+    /* 화면밖으로 치움 */
+    right: -100%; 
+    top: 0;
+
+    display: flex;
+    flex-direction: row-reverse;
+
+    transition: 0.8s;
 }
+
+header .gnb.open{
+    right: 0;
+}
+
+header .gnb .close{
+    color: #fff;
+    margin-left: 150px;
+}
+
+header .gnb ul{
+    line-height: 1.7;
+}
+
+header .gnb ul li:hover,
+header .gnb ul li.active{    
+    color: #fff;
+}
+
