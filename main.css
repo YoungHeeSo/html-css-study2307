@@ -23,6 +23,30 @@
     background: url('lesserafim.jpg')
        no-repeat center / cover;
     height: calc(100vh - 97px);
+    margin-top: 95px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #product-overview h2{
+    font-size: 58px; font-weight: 700; 
+    color: #ff5252;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.9);
+
+    animation: drop 2s linear;
+  }
+  @keyframes drop{
+    0%{
+      color: #fff;
+      opacity: 0;
+      transform: rotate(0deg) translateY(-500px);
+    }
+    100%{
+      color: #ff5252;
+      opacity: 1;
+      transform: rotate(360deg) translateY(0px);
+    }
   }
 
   /* choose plan style */
