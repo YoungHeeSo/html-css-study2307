@@ -1,6 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto+Condensed:wght@700&display=swap');
 @import url('../../common.css');
+@import url('main-tablet.css');
+
+/* 큰 와이드 화면 1980해상도 */
 
 
 body{
