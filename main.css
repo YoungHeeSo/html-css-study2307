@@ -203,11 +203,12 @@
     font-size: 20px;
     width: 80%;
   }
-
-  #plans .plan-wrapper .plan h3, 
+  #plans .plan-wrapper .plan--highlighted .plan__annotation{
+    font-size: 18px;
+  }
   #plans .plan-wrapper .plan h4, 
   #plans .plan-wrapper .plan h5{
-    font-size: 18px;    
-    margin: 0 10px;
+    font-size: 20px;    
+    margin: 10px 10px;
   }
 }
