@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>        
+        div .orange{
+            
+            background: orange;
+        }
+        /* div .orange은 후손 선택자, div의 후손 중 orange인것에 적용 */
+        /* div>.orange은 div의 직속자식인 orange에게 적용, 실무에선 후속선택을 사용 */        
+
+        .wrap>div{
+            font-style: italic;
+            background: red;
+        }
+
+        body em{
+            background: skyblue;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <h1 id="change" class="yellow low primary">안녕하세요</h1>
+    <em>빠이팅!</em>
+    <div>
+        <em>빠이팅?</em>
+        <ul>
+            <li id="apple" class="center reverse">사과</li>
+            <li>포도</li>
+            <li class="orange">석류</li>
+        </ul>
+
+        <div >당근</div>
+        <p>토마토</p>
+        <span class="orange">딸기</span>
+    </div>
+</body>
+</html>

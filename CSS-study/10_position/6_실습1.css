@@ -1,0 +1,79 @@
+@import url('../../common.css');
+
+section {
+    width: 300px;
+    background: pink;
+    border: 2px solid #ccc;
+    padding: 10px;
+    margin: 30px auto 0;
+    position: relative;
+}
+section h1 {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #080;
+    margin-bottom: 15px;
+}
+section .content {
+    padding-left: 10px;
+}
+section .content li {
+    /* border: 1px solid #000; */
+    margin-bottom: 5px;
+}
+section .content li a {
+    color: #666;
+    font-size: 0.9em;
+}
+section .content li a:hover {
+    color: #00f;
+    text-decoration: underline;
+}
+section .more {
+  background: orange;
+  position: absolute;
+  right: 10px; top: 10px;  
+}
+section .more a {
+    color: #00f;
+    text-decoration: underline;
+}
+
+
+/* .container{
+    background: pink; border: 3px solid gray;
+    width: 450px; height: 60%;
+    margin: 50px auto;
+    position: relative;
+    padding: 20px;
+}
+.container .title{
+    color: green;
+    width: 50%;
+    font-weight: 700; font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .box{
+    font-size: 1.5em; color: gray;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+
+    margin-top: 20px;
+}
+.container .box li{
+    line-height: 30px;
+}
+.container .box li:nth-child(3){
+    text-decoration: underline; 
+    color: blue;
+}
+.container .box li:nth-child(4){
+    text-decoration: underline; color: blue;
+    position: absolute;
+    right: 0; top: 0;
+    padding: 20px 10px;
+} */

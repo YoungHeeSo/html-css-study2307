@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>        
+        div> .orange{
+            background:orange;
+        } 
+        /* div의 직속자식인 orange한테 스타일 적용 */
+        body>div>ul>li{
+            color: orange;
+        }
+        /* ">" 자식을 설정할때*/
+        #circle>h1.title>.left.low>#banana{
+            background: red;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="circle">
+        <h1 class="title">
+            <div class="left low">
+                <div id="banana">나나바</div>
+            </div>
+        </h1>
+    </div>
+
+    <h1 id="change" class="yellow low primary">안녕하세요</h1>
+    <div>
+        <ul>
+            <li id="apple" class="center reverse">사과</li>
+            <li>포도</li>
+            <li class="orange">석류</li>
+        </ul>
+
+        <div >당근</div>
+        <p>토마토</p>
+        <span class="orange">딸기</span>
+    </div>
+</body>
+</html>
